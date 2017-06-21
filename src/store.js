@@ -25,7 +25,7 @@ export const store = new Vuex.Store({
             )
         }
     },
-    actions: {
+    actions: { // actions is great for asynchronous call
         addTodoActions(data, text) {
             setTimeout(()=>{
                 data.commit('addTodo', text)
